@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سرد العلم</title>
+    <link rel="stylesheet" href="css/main_page.css" id="theme">
+    <style>
+        /* Resetting default styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        /* Header and Nav Styles */
+        header, nav {
+            background: linear-gradient(to bottom, #333, #222); /* Gradient from darker to lighter shade */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            animation: slideInDown 0.5s ease-out;
+        }
+
+        header p {
+            margin-bottom: 10px;
+        }
+
+        nav {
+            padding: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #236c9c; /* Change to your desired hover color */
+        }
+
+        /* Section Styles */
+        section {
+            padding: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .positive-points {
+            display: flex;
+            justify-content: center;
+        }
+
+        .point {
+            margin: 0 20px;
+            text-align: center;
+            animation: slideInLeft 1s ease-out;
+            padding: 10px; /* Add padding for better spacing */
+            position: relative; /* Ensure the absolute positioned shadow stays within the container */
+            transform: translateY(-20px);
+        }
+
+        .point img {
+            width: 350px; /* Increased size */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px;
+            border-radius: 25px; /* Smooth borders */
+            transition: transform 0.3s ease; /* Added transition for scaling */
+        }
+
+        .point:hover img {
+            transform: translateY(-20px); /* Scale up by 10% on hover */
+        }
+
+        .point::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 25px; /* Match the border-radius of the image */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Invisible border with shadow */
+            opacity: 2;
+            transition: transform 0.3s ease; /* Fade in transition */
+        }
+
+        .point:hover::before {
+            transform: scale(1.1); /* Corrected capitalization */
+            /* Fade in the shadow on hover */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: slideInUp 0.5s ease-out;
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            /* Add your responsive styles here */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>موقع سرد العلم</h1>
+        <p>موقع سرد العلم يقدم لك تلخيصات للكتب بجودة عالية وسهولة الوصول.</p>
+        <p>اكتشف عالم المعرفة بسهولة وسرعة.</p>
+    </header>
+    <nav>
+        <a href="روايات2.html">روايات</a>
+        <a href="short_stories.html">قصص قصيرة</a>
+        <a href="books.html">كتب اسلامية</a>
+        <a href="about.html">حولنا</a>
+    </nav>
+    
+    <section id="about">
+        <h2> لماذا موقع سرد العلم؟</h2>
+        <div class="positive-points">
+            <div class="point">
+                <img src="images/easy-access.jpeg" alt="سهولة الوصول">
+                <p>توفير ملخصات الكتب بطريقة سهلة وميسرة للقراء</p>
+            </div>
+            <div class="point">
+                <img src="images/high-quality.jpeg" alt="جودة عالية">
+                <p>تلخيصات عالية الجودة توفر المعلومات الأساسية بدقة واضحة</p>
+            </div>
+            <div class="point">
+                <img src="images/diverse-content.jpeg" alt="محتوى متنوع">
+                <p>محتوى متنوع يلبي احتياجات جميع القراء بمختلف الفئات</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 موقع سرد العلم. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>

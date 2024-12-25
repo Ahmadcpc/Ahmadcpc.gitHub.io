@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    direction: rtl; /* Right-to-left text direction */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.novel-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.novel-type {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.novel-type:hover {
+    transform: translateY(-5px);
+}
+
+.button-content {
+    text-align: center;
+}
+
+.button-content img {
+    width: 200px;
+    height: 250px;
+}
+
+#suggestionForm {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#suggestionForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#suggestionForm input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#suggestionForm button {
+    padding: 8px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#suggestionForm button:hover {
+    background-color: #555;
+}

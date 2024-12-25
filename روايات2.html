@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملخصات روايات</title>
+    <link rel="stylesheet" href="css/روايات.css">
+</head>
+<body>
+    <header>
+        <h1>الروايات</h1>
+    </header>
+    <nav>
+        <a href="موقع سرد العلم.html">Back to Home</a>
+    </nav>
+    <section>
+        <h2>انواع الروايات</h2>
+        <div class="novel-types">
+            <button class="novel-type" onclick="showNovelSummary('Phisiology')">
+                <a href="فلسفي.html">
+                    <div class="button-content">
+                        <img src="images/philosophy.jpeg" alt="Romance Novel">
+                        <span>فلسفي</span>
+                    </div>
+                </a>
+            </button>
+            <button class="novel-type" onclick="showNovelSummary('Mystery')">
+                <a href="غموض.html">
+                    <div class="button-content">
+                        <img src="images/mystery.jpeg" alt="Mystery Novel">
+                        <span>غموض</span>
+                    </div>
+                </a>
+            </button>
+            <button class="novel-type" onclick="showNovelSummary('Fantasy')">
+                <a href="خيالي.html">
+                    <div class="button-content">
+                        <img src="images/fantasy.jpeg" alt="Fantasy Novel">
+                        <span>خيالي</span>
+                    </div>
+                </a>
+            </button>
+            <button class="novel-type" onclick="showNovelSummary('Science Fiction')">
+                <a href="علمي.html">
+                    <div class="button-content">
+                        <img src="images/science-fiction.jpeg" alt="Science Fiction Novel">
+                        <span>علمي</span>
+                    </div>
+                </a>
+            </button>
+            <button class="novel-type" onclick="showNovelSummary('Historical Fiction')">
+                <a href="تاريخي.html">
+                    <div class="button-content">
+                        <img src="images/historical-fiction.jpeg" alt="Historical Fiction Novel">
+                        <span>تاريخي</span>
+                    </div>
+                </a>
+            </button>
+            <!-- Add more buttons for other types of novels -->
+        </div>
+        <div id="novel-summary">
+            <!-- Novel summaries will appear here -->
+        </div>
+    </section>
+    <script>
+        function showNovelSummary(type) {
+    var novelSummaryDiv = document.getElementById("novel-summary");
+    var summary = "";
+    switch (type) {
+        case 'فلسفي':
+            summary = "في العادة تركز روايات الفلسفة على العلاقات الفلسفية بين الشخصيات، وغالبًا ما تنتهي بنهاية سعيدة.";
+            break;
+        case 'غموض':
+            summary = "تشتمل روايات الغموض على حل لغز أو جريمة، وغالبًا ما تتضمن محققًا أو محققًا هاويًا كبطل.";
+            break;
+        case 'خيالي':
+            summary = "تدور روايات الخيال في عوالم خيالية مع عناصر سحرية ومخلوقات أسطورية ومغامرات ملحمية.";
+            break;
+        case 'علمي':
+            summary = "تستكشف روايات الخيال العلمي مفاهيم مستقبلية وتكنولوجيا وتطورات علمية، غالبًا ما تكون في الفضاء أو واقع بديل.";
+            break;
+        case 'تاريخي':
+            summary = "تدور روايات التاريخ في الماضي وغالبًا ما تمزج بين الشخصيات والأحداث الخيالية والسياقات التاريخية الحقيقية.";
+            break;
+        // Add cases for other types of novels
+        default:
+            summary = "لا يوجد ملخص متاح.";
+            break;
+    }
+    novelSummaryDiv.innerHTML = "<p>" + summary + "</p>";
+}
+
+    </script>
+</body>
+</html>

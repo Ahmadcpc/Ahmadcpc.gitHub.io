@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رواية فلسفية</title>
+    <link rel="stylesheet" href="css/types.css"> <!-- Include your CSS file -->
+</head>
+<body dir="rtl">
+    <header>
+        <h1>رواية فلسفية</h1>
+        <!-- Add the search form here -->
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="ابحث عن الكتاب...">
+            <div id="autocompleteResults"></div>
+            <button type="submit">بحث</button>
+        </form>
+    </header>
+    <nav>
+        <a href="موقع سرد العلم.html">العودة إلى الصفحة الرئيسية</a>
+    </nav>
+    <section id="bookResults" class="novel-types">
+        <!-- Book pictures will be displayed here -->
+        <div class="novel-type">
+            <!-- Wrap the image within an anchor tag -->
+            <a href="book1_summary.html">
+                <div class="button-content">
+                    <img src="images/الخيميائي.jpeg" alt="الخيميائي">
+                    <span>الخيميائي</span>
+                </div>
+            </a>
+        </div>
+        <div class="novel-type">
+            <!-- Wrap the image within an anchor tag -->
+            <a href="book2_summary.html">
+                <div class="button-content">
+                    <img src="images/another_book.jpg" alt="رواية فلسفية 2">
+                    <span>رواية فلسفية 2</span>
+                </div>
+            </a>
+        </div>
+        <!-- Add more book images and descriptions here -->
+    </section>
+
+    <!-- Suggestion Form -->
+    <section id="suggestionForm">
+        <h2>اقتراح كتاب</h2>
+        <form id="suggestionForm">
+            <label for="suggestionInput">اقتراح كتاب:</label>
+            <input type="text" id="suggestionInput" placeholder="ادخل اقتراحك هنا...">
+            <button type="submit">ارسال</button>
+        </form>
+    </section>
+
+    <script src="js/search.js"></script> <!-- Include your JavaScript file -->
+    <script src="js/suggestion.js"></script> <!-- Include your suggestion JavaScript file -->
+</body>
+</html>

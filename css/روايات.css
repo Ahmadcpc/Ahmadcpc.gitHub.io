@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+.novel-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.novel-type {
+    margin: 10px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.novel-type:hover {
+    background-color: #ccc;
+}
+
+.button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-content img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#novel-summary {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
